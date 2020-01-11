@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="index.css">
+	  <link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+	  <link href='https://fonts.googleapis.com/css?family=Caudex' rel='stylesheet'>
+	  <link href='https://fonts.googleapis.com/css?family=Nunito+Sans' rel='stylesheet'>
+	  <link rel="stylesheet" type="text/css" href="https://www.masjidnow.com/embeds/css/daily_widget.css" media="all">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="index.js"></script>
+	</head>
+  
+    <body>
+	  <div id="main">
+		<div class="headingBar">
+          <h1 id="pageTitle">Mosque Aisha, Niagara Falls</h1>
+	      <h5 id="location">5550 Stanley Ave, Niagara Falls, ON L2G 3X2 &nbsp | &nbsp (905) 347-2633</h5>
+		</div>
+		
+	    <!-- Buttons for tabular regions -->
+	    <div class="button_menu">
+	      <button class="button_link" onclick="selectRegion(event, 'Home')" id="defaultSelected" >
+		    Home
+		  </button>
+	      <button class="button_link" onclick="selectRegion(event, 'News')">
+		    News
+		  </button>
+	      <button class="button_link" onclick="selectRegion(event, 'Events')">
+		    Events
+		  </button>
+		  <button class="button_link" onclick="selectRegion(event, 'Classes')">
+		    Classes
+		  </button>
+		  <button class="button_link" onclick="selectRegion(event, 'Gallery')">
+		    Gallery
+	      </button>
+	    </div>
+	  
+	  <!-- Content of regions -->
+	    <div id="Home" class="subpage">	
+	      <div class="homeImage">
+		    <img src="office.jpg" width="100%"></img>
+		  </div>
+	      <div id="aboutSection">
+		    <h3>About Us:</h3>
+		    <p> 
+			   Mosque Aisha's location is very convenient and close to Niagara Falls and offers tourists visiting the Niagara Region easy access to
+			   perform prayers at a facility so close to the Falls. Mosque Aisha offers five daily prayers including Friday prayer. We have Quran
+			   classes 4 days a week. <br/>
+		    </p> <br/>
+			<p>
+			  <a  class="facebookLink" href="https://www.facebook.com/MasjidNiagaraFalls/" target="_blank"><i class="fa fa-facebook-official" style="font-size:24px" aria-hidden="true"> &nbsp </i><b>Follow us on Facebook</b></a> <br/> 
+			  <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/MasjidNiagaraFalls/" data-width="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=910&amp;href=https%3A%2F%2Fwww.facebook.com%2FMasjidNiagaraFalls%2F&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small">
+			    <span style="vertical-align: bottom; width: 450px; height: 20px;">
+			      <iframe name="f3c69dba28bbf2c" width="1000px" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v3.3/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D45%23cb%3Df230bd1828a1bd8%26domain%3Dwww.mosqueaisha.ca%26origin%3Dhttp%253A%252F%252Fwww.mosqueaisha.ca%252Ff2c690e63953618%26relation%3Dparent.parent&amp;container_width=910&amp;href=https%3A%2F%2Fwww.facebook.com%2FMasjidNiagaraFalls%2F&amp;layout=standard&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 450px; height: 20px;" class=""></iframe>
+			    </span>
+			  </div>			  
+			</p>
+		  </div>
+	    </div>
+        <div id="News" class="subpage">
+		<!-- Carousel -->
+		  <div class="carouselContainer">
+			<div class="indexContainer">
+			  <span class="indexMarker"></span> &nbsp
+			  <span class="indexMarker"></span> &nbsp
+			  <span class="indexMarker"></span>
+			</div>				  
+		    <div class="carouselPane" >
+		      <div class="newsItem">
+		        <div class="newsImage">
+		          <p>newsImage1</p>
+		        </div>
+		        <h3>News Item #1</h3> 
+		        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		      </div>
+		    </div>
+		    <div class="carouselPane">
+		      <div class="newsItem">
+		        <div class="newsImage">
+		          <p>newsImage2</p>
+		        </div>
+		        <h3>News Item #2</h3> 
+		        <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+		      </div>
+		    </div>
+		    <div class="carouselPane">
+		      <div class="newsItem">
+		        <div class="newsImage">
+		          <p>newsImage3</p>
+		        </div>
+		        <h3>News Item #3</h3> 
+		        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  </p>
+		      </div>
+		    </div>  
+			<a class="carouselControlPrev" onclick="moveIndex(-1)"> &#10094 </a>
+			<a class="carouselControlNext" onclick="moveIndex(+1)"> &#10095 </a> 
+		  </div>
+	    </div>		  
+	    <div id="Events" class="subpage">
+		  <span class="eventsColumn">
+			<div id = "defaultEvent" class="eventButton" onclick="selectEvent(event, 'event1')"> 
+			  <p> Dec 6th </p>
+			  <p> 7:00 PM - 9:00 PM</p>
+		      <h3>Event Item #1</h3> 
+			</div>
+			<div class="eventButton" onclick="selectEvent(event, 'event2')"> 
+			  <p> Nov 23rd </p>
+			  <p> 12:00 PM - 1:00 PM</p>
+		      <h3>Event Item #2</h3> 
+			</div>
+			<div class="eventButton" onclick="selectEvent(event, 'event3')"> 
+			  <p> Oct 31st </p>
+			  <p> 9:00 AM - 9:00 PM</p>
+		      <h3>Event Item #3</h3> 
+			</div>
+		  </span>
+		  <span id="event1" class="eventItem">
+		    <div class="eventImage">
+			  <p> eventImage1 </p>
+			</div>			 
+		    <p> Dec 6th </p>
+			<p> 7:00 PM - 9:00 PM</p>
+		    <h3>Event Item #1</h3>  
+		    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+		  </span>
+		  <span id="event2" class="eventItem">
+		    <div class="eventImage">
+			  <p> eventImage2 </p>
+			</div>	
+		    <p> Nov 23rd </p>
+			<p> 12:00 PM - 1:00 PM</p>
+		    <h3>Event Item #2</h3> 
+		    <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		  </span>
+		  <span id="event3" class="eventItem">
+			<div class="eventImage">
+			  <p> eventImage3 </p>
+			</div>	
+		    <p> Oct 31st </p>
+			<p> 9:00 AM - 9:00 PM</p>
+		    <h3>Event Item #3</h3> 
+		    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		  </span>
+	    </div>	
+	    <div id="Classes" class="subpage">
+		  <div class="classesContainer">
+		    <div class="classItem">
+			  <div class="classImage">
+		        <p>ClassImage1</p>
+		      </div>
+		      <h3>Class Item #1</h3> 
+		      <p> <i> Days/Times </i> </p>
+		      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		      <p> <b> Contact: </b> </p>
+		    </div>
+		    <div class="classItem">
+		      <div class="classImage">
+		        <p>ClassImage2</p>
+		      </div> 
+		      <h3>Class Item #2</h3>
+		      <p> <i> Days/Times </i> </p>
+		      <p>  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		      <p> <b> Contact: </b> </p>
+		    </div>
+		    <div class="classItem">
+		      <div class="classImage">
+		        <p>ClassImage3</p>
+		      </div>
+		      <h3>Class Item #3</h3> 
+		      <p> <i> Days/Times </i> </p>		  
+		      <p>  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		      <p> <b> Contact: </b> </p>	
+		    </div>
+		  </div>
+	    </div>
+	    <div id="Gallery" class="subpage">
+	      <div id="img1" class="galleryImage" onclick="openImage('img1')">
+		    <p>image1</p> 
+	      </div>
+		  <div id="img2" class="galleryImage" onclick="openImage('img2')">
+		    <p>image2</p>
+	      </div>
+		  <div id="img3" class="galleryImage" onclick="openImage('img3')">
+	        <p>image3</p>
+		  </div>
+		  <div id="img4" class="galleryImage" onclick="openImage('img4')">
+	        <p>image4</p>
+		  </div>
+		  <div id="img5" class="galleryImage" onclick="openImage('img5')">
+	        <p>image5</p>
+		  </div>
+		  <div id="img6" class="galleryImage" onclick="openImage('img6')">
+	        <p>image6</p>
+		  </div>
+		  <div id="img7" class="galleryImage" onclick="openImage('img7')">
+	        <p>image7</p>
+		  </div>
+		  <div id="img8" class="galleryImage" onclick="openImage('img8')">
+	        <p>image8</p>
+		  </div>
+		</div>
+		<div class="footer">
+		  	<p	class="footerInfo">
+				Contact: <b>Mosque Aisha, Niagara Falls</b> <br/> 
+				Address: <b>5550 Stanley Ave, Niagara Falls, ON L2G 3X2</b> Phone: <b>(905) 347-2633</b> <br/>
+				Email: <b> <a href="mailto:info%40mosqueaisha.ca">info@mosqueaisha.ca</a> </b> <br/>
+				Copyright &copy Mosque Aisha, Niagara Falls 2020 
+			</p>
+		</div>
+	  </div>
+	  <div class="modalBox">
+		<span class="closeButton" onclick="closeImage()">&times;</span> 
+		<span class="modalImage"></span>
+		<a class="galleryControlNext" onclick="nextImage()"> &#10095 </a>
+		<a class="galleryControlPrev" onclick="prevImage()"> &#10094 </a> 
+	  </div>
+	  
+	  <a id="sliderBarControl" onclick="closeSideBar()">
+	  	<p id="sliderBarDirection"> &#10095 </p>
+	  </a>
+	  
+	  <div id="sideBar">
+		<div id="calendarBox">
+		 <br/>
+		  <div id="currentDate"></div> <br/>
+	      <div id="currentTime"></div> <br/>
+		</div>
+		<center id="timeTable">
+			<!-- The following elements were taken from the masjid-now widget -->
+				<iframe class="widget-m-top" id="iframe" src="https://www.islamicfinder.org/prayer-widget/6087892/hanafi/5/0/15.0/15.0" frameborder="1" scrolling="no" style=" width: 250px; height: 65px; border: 1px solid #ddd;"></h1></h1></iframe>
+				<script type="text/javascript" id="masjidnow-daily-9875"> var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://www.masjidnow.com/embeds/daily_widget?masjid_id=9875&options[show_adhan]=true&options[show_monthly_info]=true'; var embedder = document.getElementById('masjidnow-daily-9875'); embedder.parentNode.insertBefore(s, embedder); </script>
+		</center>
+		<br/>
+		<div id="fridayPrayer">
+		  <b>Friday Prayer:</b> <br/>
+		  <p style="font-size:17px"> 1:30pm Khutba, 2:00pm Salah </p>
+		</div>
+		<br/>
+		<div id="appDownload">
+		  <b><u>MasjidNow App:</u></b> <br/>
+		  Our salaah timings are now accessible through your mobile device using our App! Please click below to download for iOS or Android: <br/> &nbsp
+		  <a href="https://itunes.apple.com/us/app/mymasjid-by-masjidnow/1227265182?ls=1&amp;mt=8"><i class="fa fa-apple" style="font-size:35px;line-height:50px"></i></a> &nbsp &nbsp 
+		  <a href="https://play.google.com/store/apps/details?id=com.masjidnow.mymasjid&amp;referrer=utm_source%3Dwhatsapp"><i class="fa fa-android" style="font-size:35px;line-height:50px"></i></a>
+		  
+		</div>
+	</div>
+	  
+	  <!-- screen filter to darken screen -->
+	  <div id="screenFilter"></div>
+
+	  
+	  
+	  <script>
+		// Set the current calendar date 
+		currentDate = new Date();
+		document.getElementById("currentDate").innerHTML = currentDate.toDateString();
+		
+		//Set the current time and update it every second
+		currentTime = document.getElementById("currentTime");
+        setInterval(function () {
+	      updateTime(currentTime)
+	      }, 1000);
+		 
+
+		document.getElementById("defaultSelected").click();   //Click the 'Home' button by default
+	    document.getElementById("defaultEvent").click();	  //Click the first event by default
+	  
+	    //Start on the first pane by default, and automatically scroll every 5 seconds 
+	    selectPane(0);
+	    var rotateCarousel = setInterval(function () {
+	      moveIndex(+1)
+		  }, 5000);  
+	  </script>
+	  
+	
+	</body>
+	
+	
+	
+	
+  </html>

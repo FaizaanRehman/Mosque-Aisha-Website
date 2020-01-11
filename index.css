@@ -1,0 +1,549 @@
+/*------------------Document Wide Styling------------------*/
+body, html {
+  margin: 0;
+}	
+
+body {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 245, 230, 0.0);
+  background-image: url('background.jpg');
+  background-attachment: fixed;
+}
+
+#main {
+  transition: margin-right .5s; /* used for sidebar animation*/
+  margin-right: 20%;
+}
+
+#screenFilter {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(38, 38, 38, 0.5);
+  z-index: 2;  
+  transition: 1s ease;
+}
+
+/*------------------Page Title Bar------------------*/
+.headingBar {
+  width: 100%;
+  margin: 0;
+}
+
+#pageTitle {
+  color: rgb(240, 240, 240);
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+  font-family: 'Caudex'; 
+  font-size: 64px;
+
+}
+
+#location{
+  color: rgb(240, 240, 240);
+  text-align: center;
+  text-shadow: 1px 1px black;
+  font-family: 'Caudex'; 
+  font-size: 21px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  line-height: 2;
+}
+
+/*------------------Carousel Area------------------*/
+@keyframes slideEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}  
+}
+
+.carouselContainer {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.carouselPane {
+  display: none;   
+}
+
+.carouselControlPrev {
+  padding: 12% 1.5%;
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
+  background-color:  rgba(65, 88, 88, 0.7);
+  transition: 0.6s ease;
+  border-radius: 0 6px 6px 0;
+  z-index: 1;
+  left: -1.5%;
+  box-shadow: 1px 1px 5px grey;
+  color: rgba(193, 215, 215, 1.0);
+}
+
+.carouselControlNext {
+  padding: 12% 1.5%;
+  position: absolute;
+  top: 25%;
+  cursor: pointer;
+  background-color:  rgba(65, 88, 88, 0.7);
+  transition: 0.6s ease;
+  border-radius: 6px 0 0 6px;
+  z-index: 1;
+  right: -1.2%;
+  box-shadow: 1px 1px 5px grey;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.carouselControlNext:hover, .carouselControlPrev:hover {
+  background-color: rgba(65, 88, 88, 1);
+  color: white;
+}
+
+.indexContainer {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 3.5%;  
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.indexMarker {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #5c8a8a;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.6s ease;  
+  z-index: 1;
+  opacity: 0.4;
+}
+
+.indexMarker.active {
+	opacity: 1;
+}
+
+/*------------------Button Menu------------------*/
+/*animation for button menu*/
+@keyframes fadeEffect {
+  from {opacity:0;}
+  to {opacity: 1;}
+}
+
+
+/* Style for button menu */
+.button_menu {
+  overflow: hidden;
+  background-color: rgba(156, 186, 201, 0.8);
+  box-shadow: 1px 1px 6px grey;
+  z-index:1;
+}
+
+/* Style for individual buttons */
+.button_menu button {
+  background-color: rgba(156, 186, 201, 0.0);
+  font-family:'Asul';
+  font-size: 140%;
+  text-shadow: 1px 1px 3px rgb(200, 200, 200);
+  color:black;
+  letter-spacing: 1.5px;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2% 5%;
+  transition: all ease 0.3s;
+}
+
+/* Change color of button when hovering over */
+.button_menu button:hover{
+  background-color: rgba(156, 186, 201, 1);
+  font-size: 160%;
+}
+
+/* Change color of button when it is selected */
+.button_menu button.active{ 
+  background-color: rgba(148, 189, 209, 1);
+  font-size: 160%;
+}
+
+
+/* Style the content of the subpages */
+.subpage {
+  display:none;
+  padding: 6px 12px;
+  background-color: rgba(255, 245, 230, 0.0);
+  overflow: hidden;
+  border-top: none;
+  animation: fadeEffect 1s; 
+  margin-top: 7px;
+  margin-bottom: 10%;
+}	
+
+
+
+/*------------------Home Subpage------------------*/
+#aboutSection {
+  background-color: rgba(184, 194, 163, 0.85);
+  padding: 2% 4%;
+  margin: 2%;
+  display: block;
+  box-shadow: 1px 1px 6px grey;
+}
+
+
+#aboutSection h3{
+  font-size: 24px;
+}
+
+#aboutSection p{ 
+  font-size: 18px;
+}
+
+.homeImage {
+  background-color: #ccc;
+  display: inline-block;
+  padding: 2%;	
+  margin: 2%;
+  width: 92%;
+}
+
+.facebookLink {
+
+}
+
+
+/*------------------News Subpage------------------*/
+.newsItem {
+  height: 100%;
+  padding: 2%;
+  margin: 4%;
+  animation: slideEffect ease 1s;
+  background-color: rgba(198, 185, 185, 0.9);
+  box-shadow: 1px 1px 6px grey;
+}
+
+.newsImage {
+  background-color: #ccc;
+  padding: 20% 20%;
+  text-align: center;
+  margin: 6% 4% 2% 4%;
+  margin-bottom: 3%;
+  box-shadow: 1px 1px 12px #ccc;
+}
+
+.newsItem h3{
+  font-size:24px;	
+  margin: 6%;
+  margin-bottom: 4%;
+}
+
+.newsItem p{
+  font-size:18px;	
+  margin: 6%;
+  margin-top: 0;
+}
+
+/*------------------Events Subpage------------------*/
+
+.eventsColumn {
+  background-color: rgba(194, 214, 198, 0.9);
+  margin-top: 4%;
+  margin-left: 1%;
+  float: left;
+  display: inline-block;
+  width: 30%;
+  box-shadow: 1px 1px 8px grey;
+}
+
+.eventButton {
+  text-align: center;
+  cursor: pointer;
+  padding: 6% 8%;
+  margin: 4%;
+  transition: 0.6s;
+  border-bottom: 2px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.eventImage {
+  display: inline-block;  
+  background-color: #ccc;
+  padding: 21% 40%;
+  margin: 2% 0%;
+  box-shadow: 1px 1px 4px grey;
+}
+
+.eventItem {
+  float: left;
+  display: hidden;
+  width: 53%;
+  height: 100%;
+  padding: 5% 5%;
+  margin: 4% 0% 4% 4%;
+  background-color: rgba(157, 175, 175, 0.9); 
+  box-shadow: 1px 1px 6px grey;
+  animation: slideEffect ease 1s;
+}
+
+.eventButton:hover {
+  background-color: rgba(208, 225, 211, 1) ;  
+}
+
+.eventButton.active {
+  background-color: rgba(224, 235, 226, 1);
+  box-shadow: 1px 1px 8px #ccc;  
+  font-size: 105%;
+}
+
+/*------------------Class Subpage------------------*/
+.classesContainer {
+  display: flex;
+  justify-content: space-around;
+  direction: row;
+}
+
+.classImage {
+  background-color: #ccc;
+  padding: 20% 5%;   
+}
+
+.classItem {
+  background-color: rgba(189, 165, 117, 0.9);
+  padding: 3%;
+  margin: 5% 1%;
+  width: 30%;
+  height: 90%;
+  text-align: center;
+  float: left;
+  box-shadow: 1px 1px 6px grey;
+  transition: ease 1s;
+}
+
+.classItem:hover {
+  margin: 10% 4%;
+  /*width: 35%;  
+  padding: 5%;
+  font-size: 16px; */
+  transform: scale(1.2, 1.2);
+}
+
+.classItem h3{
+  font-family: 'Nunito Sans';
+}
+
+
+/*------------------Gallery Subpage------------------*/
+
+
+.galleryImage {
+  cursor: pointer;
+  background-color: #ccc;
+  margin: 12px 19px;
+  width: 20%;
+  height: 100%;
+  line-height: 130px;
+  text-align: center;
+  float: left;
+  transition: 0.3s; 
+}
+
+.galleryImage:hover {
+  box-shadow: 1px 1px 6px;
+}
+
+.modalBox {
+  display: none;
+  position: fixed;
+  width: 50%;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  margin-left: -25%;
+  margin-top: -17.5%;
+  z-index: 3;
+  background-color: rgba(102, 102, 102, 0.7);  
+  text-align: center;
+  box-shadow: 1px 1px 6px grey;
+  animation: 0.6s ease fadeEffect;
+}
+
+.modalImage {
+  display: inline-block;
+  background-color: #f2f2f2;
+  width: 98%;
+  height: 86%;
+  margin: 4% 1%;
+  animation: 0.6s ease fadeEffect;
+}
+
+.modalCaption {
+  margin: auto;
+  display: block; 
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+ 
+.closeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+} 
+ 
+.galleryControlNext{
+  padding: 3% 3%;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  background-color:rgba(140, 140, 140, 0.3);
+  transition: 0.6s ease;
+  border-radius: 6px 0 0 6px;
+  z-index: 1;
+  right: 0;
+  box-shadow: -1px 1px 5px grey;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.galleryControlPrev{
+  padding: 3% 3%;
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  background-color:rgba(140, 140, 140, 0.3);
+  transition: 0.6s ease;
+  border-radius: 0 6px 6px 0;
+  z-index: 1;
+  left: 0;
+  box-shadow: 1px 1px 5px grey;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.galleryControlNext:hover, .galleryControlPrev:hover {
+  background-color:rgba(140, 140, 140, 0.8);
+}	
+
+	
+/*------------------ Footer ------------------*/
+.footer {
+  width: 100%;
+  background-color: rgba(115, 115, 140, 0.9);
+  box-shadow: 1px 1px 8px black;
+  padding: 4%;  
+  line-height: 150%;
+  font-size: 17px;
+}
+.footerInfo {
+  text-align: center;
+  font-family: 'Caudex';
+}
+
+/*------------------Side Bar Subpage------------------*/
+
+#sliderBarControl {
+  cursor: pointer;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px 0px 0px 6px;
+  background-color: #e6e6e6;
+  width: 21.5%;
+  position: fixed;
+  z-index: 1;
+  top: 43%;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  opacity: 0.7;
+  font-size: 20px;
+  color: #8c8c8c;
+  box-shadow: 1px 1px 6px grey;
+  padding: 4% 0.5% 4% 0.5%;
+}
+
+#sliderBarControl:hover {
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+
+#sliderBarDirection {
+
+}
+
+
+#sideBar {
+  border-left: 4px double #d9d9d9;
+  background-color: rgb(236, 223, 223, 1);
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  box-shadow: 1px 1px 6px grey;
+}
+
+
+#calendarBox{
+  background-color:rgb(240, 222, 194);
+}
+
+#sideBar h2{
+  font-family: 'Caudex';	
+  font-size: 30px;
+}
+
+#currentDate, #currentTime {
+  font-family: 'Asul';
+  font-size: 22px;
+  text-align:center;
+}
+
+#fridayPrayer {
+  font-family: 'Asul';
+  font-size: 19px;
+  background-color: rgb(247, 247, 212);
+  text-align:center;
+  padding-top: 3%;
+  padding-bottom: 5px;
+}
+
+#appDownload {
+  padding: 8px;
+  font-size: 16px;
+  background-color: rgb(202, 224, 232);
+}
+
+
+#timeTable{	
+  background-color: rgb(190, 244, 190);
+}
+
+
+#timeTable table{	
+
+}
+
+#timeTable th, td {	
+
+}
+
+#timeTable tr:hover {	
+  background-color: rgb(212, 247, 212);
+}
+
+#timeTable th {	
+
+}
