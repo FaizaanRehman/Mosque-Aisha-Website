@@ -1,5 +1,5 @@
 # Mosque-Aisha-Website
-Contains html, css, js, and image files for the Mosque Aisha Website.
+This Project contains the html, css, js, and image files for the Mosque Aisha Website.
 
 This website is being developed for the Mosque Aisha Community in Niagara Falls. It is currently work in progress.
 
