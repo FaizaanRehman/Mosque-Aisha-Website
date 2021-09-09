@@ -2,7 +2,7 @@
 
 See the web template [here.](https://faizaanrehman.github.io/Mosque-Aisha-Website/)
 
-This project contains the html, css, js, and image files for the Mosque Aisha Website.
+This project contains the JS, CSS, HTML, and image files for the Mosque Aisha Website.
 
 This website is being developed for the Mosque Aisha Community in Niagara Falls. It is currently work in progress.
 
